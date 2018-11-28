@@ -1,0 +1,7 @@
+## Interface: 80000
+## Title: Premade Spammer Filter
+## Version: 1.0
+## Notes: Filters premade groups using a list of known spammers or sellers.
+## Author: Elotheon-Arthas-EU, byubktqa
+
+PremadeSpammerFilter.lua
