@@ -10,12 +10,10 @@ hooksecurefunc("LFGListUtil_SortSearchResults", function (results)
     -- loop backwards through the results list so we can remove elements from the table
     for i = #results, 1, -1 do
         -- get information about the current result entry
-        local id, activity, name, comment, voiceChat, iLvl, honorLevel, age,
-              numBNetFriends, numCharFriends, numGuildMates, isDelisted, leaderName,
-              numMembers, isAutoAccept, questID = C_LFGList.GetSearchResultInfo(results[i])
+        local searchResultInfo = C_LFGList.GetSearchResultInfo(results[i])
         -- if the leader's name is loaded (can be nil for brand-new groups) and
         -- the name is within the spammer list, remove it from the search results
-        if leaderName and spammerNames[leaderName] then
+        if searchResultInfo.leaderName and spammerNames[searchResultInfo.leaderName] then
         	--print("Removing group with leader " .. leaderName)
             table.remove(results, i)
         end

@@ -1,6 +1,6 @@
-## Interface: 80000
+## Interface: 80100
 ## Title: Premade Spammer Filter
-## Version: 1.0
+## Version: 1.1
 ## Notes: Filters premade groups using a list of known spammers or sellers.
 ## Author: Elotheon-Arthas-EU, byubktqa
 
